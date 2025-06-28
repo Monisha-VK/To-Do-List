@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f8ff;
+}
+.navbar {
+    background-color: #00796b;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.container {
+    padding: 10px;
+}
+.task-container {
+    background-color: #e0f2f1;
+    padding: 15px;
+    width: 25%;
+    border-radius: 10px;
+    margin: 20px;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.task-container h2 {
+    color: #00796b;
+}
+.task-container button {
+    background-color: #ff7043;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+.add-button {
+    background-color: #4db6ac;
+    color: white;
+    border-radius: 100%;
+    padding: 20px 30px;
+    font-size: 30px;
+    border: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+.popup-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+.popup-box {
+    background-color: #ffffff;
+    width: 40%;
+    padding: 40px;
+    border-radius: 10px;
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    z-index: 2;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.popup-box input,
+.popup-box textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    font-size: 16px;
+    border: solid #00796b 2px;
+    border-radius: 5px;
+}
+.popup-box button {
+    background-color: #00796b;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+}
+.task-container.completed {
+  background-color: #c8e6c9 !important; /* light green */
+}
+/* Responsive for screens narrower than 600px */
+@media (max-width: 600px) {
+  .popup-box {
+    width: 90%;
+    left: 5%;
+    top: 10%;
+    padding: 20px;
+  }
+  
+  .task-container {
+    width: calc(100% - 40px);
+    margin: 10px;
+  }
+  
+  .add-button {
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    font-size: 26px;
+  }
+  
+  .popup-box input,
+  .popup-box textarea {
+    font-size: 18px;
+    padding: 6px;
+  }
+}

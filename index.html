@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>To-Do Mate</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="navbar">
+    <h1>To-Do Mate</h1>
+  </div>
+
+  <div class="container" id="task-list">
+    <!-- Tasks will be added here -->
+  </div>
+
+  <div class="popup-overlay"></div>
+
+  <div class="popup-box">
+    <h2>Add Task</h2>
+    <form>
+      <input type="text" placeholder="Task Title" id="task-title-input" required />
+      <textarea placeholder="Task Description" id="task-desc-input" required></textarea>
+      <input type="date" id="task-date-input" required />
+      <button id="add-task">Add</button>
+      <button id="cancel-popup">Cancel</button>
+    </form>
+  </div>
+
+  <button class="add-button" id="add-popup-button">+</button>
+  <script src="script.js"></script>
+</body>
+</html>
